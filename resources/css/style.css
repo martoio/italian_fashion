@@ -1,7 +1,18 @@
-nav ul {
+/* header */
+header nav ul {
   display: flex;
-  /* flex-direction: row; */
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: flex-start;
   list-style-type: none;
+}
+
+header li {
+  padding: 10px;
+}
+
+header img {
+  display: flex;
+  justify-content: center;
+  
 }
 
