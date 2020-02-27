@@ -1,3 +1,8 @@
+/*///////////////// fonts ////////////////*/
+  
+  
+
+
 /*////////////////// header ///////////////////////*/
 header nav ul {
   display: flex;
@@ -5,19 +10,51 @@ header nav ul {
   justify-content: center;
   list-style-type: none;
   padding-top: 10px;
+  margin-bottom: 100px;
   margin-top: 0;
-  background-color: #e3e3e3;
+  font-family: "Dancing Script";
+  color: black;
+  font-weight: 900;
+  letter-spacing: 0.1em;
 }
 
 header li {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: auto;
+  margin: auto;
 }
+
+/*///////////////// main page top image ////////////////////*/
+div.polaroid {
+  width: 50%;
+  margin: auto;
+  padding: 20px 20px;
+  border-radius: 50px;
+  background: #d2d0d0;
+  box-shadow: inset 16px 16px 32px #959494, 
+              inset -16px -16px 32px #ffffff;
+}
+
+.polaroid img {
+  width: 100%;
+  border-radius: 50px;
+}
+
+div.container {
+  text-align: center;
+  padding: 5px 5px;
+  margin: 5px;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+
 
 /*////////////////// Media Queries ///////////////////*/
  
 /* mobile styles */
-main {
+body {
   background-color: #e3e3e3;
 }
 
