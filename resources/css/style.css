@@ -1,4 +1,4 @@
-/* header */
+/*////////////////// header ///////////////////////*/
 header nav ul {
   display: flex;
   flex-direction: row;
@@ -14,5 +14,29 @@ header li {
   padding-right: 10px;
 }
 
-
+/*////////////////// Media Queries ///////////////////*/
  
+/* mobile styles */
+main {
+  background-color: #e3e3e3;
+}
+
+/* small tablet styles */
+@media screen and (min-width: 620px) {
+
+}
+
+/* large tablets & laptop styles */
+@media screen and (min-width: 960px) {
+
+}
+
+/* desktop styles  */
+@media screen and (min-width: 1200px) {
+  .main-container {
+    margin: 0 auto;
+    max-width: 1220px;
+    width: 100%;
+  }
+
+}
