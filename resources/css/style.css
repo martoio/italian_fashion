@@ -1,8 +1,7 @@
-/*///////////////// fonts ////////////////*/
+  body {
+    font-family: "Dancing Script", 'Lucida Sans', Verdana, sans-serif;
+  }
   
-  
-
-
 /*////////////////// header ///////////////////////*/
 header nav ul {
   display: flex;
@@ -12,10 +11,6 @@ header nav ul {
   padding-top: 10px;
   margin-bottom: 100px;
   margin-top: 0;
-  font-family: "Dancing Script";
-  color: black;
-  font-weight: 900;
-  letter-spacing: 0.1em;
 }
 
 header li {
@@ -23,7 +18,18 @@ header li {
   margin: auto;
 }
 
-/*///////////////// main page top image ////////////////////*/
+header li a {
+  color: black;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+/*///////////////// main page images ////////////////////*/
+.image_container {
+  display: flex;
+}
+
 div.polaroid {
   width: 50%;
   margin: auto;
@@ -46,8 +52,10 @@ div.container {
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 1.9em;
 }
+
+
 
 
 
