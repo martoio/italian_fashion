@@ -1,8 +1,151 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /*//////////// Variables ////////////////*/
+:root {
+  --theme-color: #e3e3e3;  
 }
 
-a {
-  color: #00B7FF;
+  /*////////// Main styles /////////////////////*/
+body {
+    font-family: "Dancing Script", 'Lucida Sans', Verdana, sans-serif;
+  }
+  
+/*////////////////// header ///////////////////////*/
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0.1em;
+}
+
+header li {
+  margin: auto;
+}
+
+header li a {
+  color: black;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.top_menu2 {
+  background-color: #fff;
+  padding: 1.2em;
+}
+
+nav a:hover {
+  color: #beb8b8;
+}
+
+/*///////////////// main page images ////////////////////*/
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+.one {
+  flex-basis: 70%;
+}
+
+.two {
+  flex-basis: 80%;
+}
+
+.three {
+  flex-basis: 90%;
+}
+
+.polaroid {
+  width: 50%;
+  margin: 1em;
+  padding: 0.8em 0.8em;
+  border-radius: 50px;
+  background: #d2d0d0;
+  box-shadow: inset 16px 16px 32px #959494, 
+              inset -16px -16px 32px #ffffff;
+}
+
+.polaroid img {
+  width: 100%;
+  border-radius: 50px;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+}
+
+.container p {
+  font-size: 1.9em;
+  margin: 0;
+  width: 100%;
+}
+
+/* Discount banner */
+.discount {
+  display: flex;
+  flex-direction: column;
+  background: url('/resources/images/page-bg.png') no-repeat center center/cover;
+  height: 7em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.animated {
+  margin: 0;
+  padding: 0;
+  font-size: 3rem;
+  background: url('/resources/images/text-bg.png') no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: moveBg 90s linear infinite; 
+  -webkit-animation: moveBg 90s linear infinite;
+}
+
+/* Text Background Animation */
+@keyframes moveBg {
+  0% {
+    background-position: 0% 30%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+
+
+
+/*////////////////// Media Queries ///////////////////*/
+ 
+/* mobile styles */
+body {
+  background-color: var(--theme-color) ;
+}
+
+/* small tablet styles */
+@media screen and (min-width: 620px) {
+
+}
+
+/* large tablets & laptop styles */
+@media screen and (min-width: 960px) {
+
+}
+
+/* desktop styles  */
+@media screen and (min-width: 1200px) {
+  
+
 }
