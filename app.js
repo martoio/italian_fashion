@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+const productsRouter = require('./routes/products');
 
 var app = express();
 
@@ -25,6 +26,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
   res.render('index')
 });
+
+app.use('/products', productsRouter);
 
 app.get('/clothing', (req, res) => {
   res.send('Clothing!')
