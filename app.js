@@ -21,11 +21,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-//app.use('/', indexRouter);
+app.use('/', indexRouter);
 //app.use('/users', usersRouter);
-app.get('/', (req, res) => {
-  res.render('index')
-});
 
 app.use('/products', productsRouter);
 
