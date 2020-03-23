@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const db = require('../db.js');
 
 // clothing //
 router.get('/clothing', (req, res, next) => {
@@ -11,6 +12,7 @@ router.get('/clothing', (req, res, next) => {
       title: "Armani Jeans",
     },
   ];
+    // const clothing = db.get('clothing'); Look this up; => returns an array of clothing items;
   res.render('products', {products: clothing});
 });
 
