@@ -9,6 +9,16 @@ body {
   }
   
 /*////////////////// header ///////////////////////*/
+#logo {
+  display: flex;
+  width: 16vw;
+}
+
+#icon {
+  display: flex;
+  width: 2vw;
+}
+
 header nav ul {
   display: flex;
   flex-direction: row;
@@ -23,6 +33,7 @@ header li {
 
 header li a {
   color: black;
+  font-size: 1.3vw;
   font-weight: 900;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -84,7 +95,7 @@ nav a:hover {
 }
 
 .container p {
-  font-size: 1.9em;
+  font-size: 2.8vw;
   margin: 0;
   width: 100%;
 }
@@ -105,7 +116,7 @@ nav a:hover {
 .animated {
   margin: 0;
   padding: 0;
-  font-size: 3rem;
+  font-size: 4vw;
   background: url('../images/text-bg.png') no-repeat;
   background-clip: text;
   -webkit-background-clip: text;
